@@ -1,211 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url("Images/Slides/Background.png"); */
+    background: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio :> </title>
-	<link rel="stylesheet" href="index.css">
-	<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    /* margin-top: 200px; */
+    padding-top: 200px; /* not affecting anything inside border, so no weird ass bugs */
+}
 
-<style>
-	.Title
-	{
-		
-		color: aliceblue;
-		margin: 0; /*to remove giant forehead ass space between title*/
-		font-size: 100px;
-	}
-	.Sub_Text
-	{
-		padding-left: 300px;
-		color: aliceblue;
-		margin: 0; /*to remove giant forehead ass space between title*/
+/* Font handling */
+h1
+{
+    font-family: "Pixelify Sans", "Press Start 2", 'Courier New', Courier, monospace;
+}
+h4
+{
+    font-family: "Pixelify Sans", "Press Start 2", 'Courier New', Courier, monospace;
+}
+h2
+{
+    font-family: "Pixelify Sans", "Press Start 2", 'Courier New', Courier, monospace;
+}
+.Button_Holder button
+{
+    font-family: "Pixelify Sans", "Press Start 2", 'Courier New', Courier, monospace;
+}
 
-	}
-	.Sub_Text_2
-	{
-		padding-left: 250px;
-	}
-</style>
+/*slider handler*/
+.Slider_Wrapper {
+    width: min(90vw, 800px);
+    margin: 0 auto;
+    position: relative;
+    /*background decoration :>*/
+    background-color: white;
+    border: 4px solid blue; 
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+    
+    
+}
+.Slider {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+#Slide_1, #Slide_2, #Slide_3 ,#Slide_4 , #Slide_5, #Slide_6, #Slide_7, #Slide_8, #Slide_9, #Slide_10, #Slide_11, #Slide_12 , #Me_1, #Me_2, #Me_3, #Me_4, #Me_5, #Me_6,#Me_7 , #Cert_1, #Cert_2, #Cert_3, #Cert_4, #Cert_5, #Cert_6, #Cert_7, #Cert_8, #Cert_9, #Cert_10, #Cert_11{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+.Slider img {
+    width: 100%;
+    object-fit: cover;
+}
+.Slider_Navigation {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+.Slider_Navigation a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: blue;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.Slider_Navigation a:hover {
+    opacity: 1;
+}
 
-<body>
-	<div>
-		<h1 class="Title"> &nbsp; &nbsp; - MY PORTFOLIO - </h1>
-		<h4 class="Sub_Text">  ----- Click on Buttons to scroll! -----</h4>
-		<h2 class="Sub_Text_2"><a href="https://www.tumblr.com/decomposedmaw" target="_blank" rel="noopener noreferrer" style="color: aliceblue;"> - Cute Art by @Decomposedmaw -</a></h2>
-		
-	</div>
+#Cert_1 img{
+    object-fit: cover;
+    background-image: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
+    background-position-x: -320px;
+    backface-visibility: 30%;
+    background-position-y: -285px;
+}
+
+#Cert_2 img{
+    object-fit: cover;
+    object-position: center -90px !important;
+}
+
+#Cert_3 img{
+    object-fit: contain;
+    background-image: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
+    background-position-x: -320px;
+    backface-visibility: 30%;
+    background-position-y: -285px;
+}
+
+#Cert_5 img{
+    object-fit: contain;
+    background-image: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
+    background-position-x: -320px;
+    backface-visibility: 30%;
+    background-position-y: -285px;
+}
+
+#Cert_6 img{
+    object-fit: contain;
+    background-image: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
+    background-position-x: -320px;
+    backface-visibility: 30%;
+    background-position-y: -285px;
+}
+
+#Cert_8 img{
+    object-fit: contain;
+    background-image: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
+    background-position-x: -320px;
+    backface-visibility: 30%;
+    background-position-y: -285px;
+}
+
+#Cert_9 img{
+    object-fit: contain;
+    background-image: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
+    background-position-x: -320px;
+    backface-visibility: 30%;
+    background-position-y: -285px;
+}
+
+#Cert_10 img{
+    object-fit: contain;
+    background-image: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
+    background-position-x: -320px;
+    backface-visibility: 30%;
+    background-position-y: -285px;
+}
+
+#Cert_11 img{
+    object-fit: contain;
+    background-image: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
+    background-position-x: -320px;
+    backface-visibility: 30%;
+    background-position-y: -285px;
+}
 
 
-	<section class="Container"> <!-- Parent Object/Heading -->
-	<div class="Slider_Wrapper"> <!-- Parent Object Holding Slider and Buttons-->
-		<div class="Slider"> <!-- Child Object Holding Images -->
-			<div id="Slide_1">
-				<img src="Assets/Slides/1.jpg" height="450" alt="Image 1">
-			</div>
-			<div id="Slide_2">
-				<img src="Assets/Slides/2.jpg" height="450" alt="Image 2">
-			</div>
-			<div id="Slide_3">
-				<img src="Assets/Slides/3.jpg" height="450" alt="Image 3">
-			</div>
-			<div id="Slide_4">
-				<img src="Assets/Slides/4.jpg" height="450" alt="Image 3">
-			</div>
-			<div id="Slide_5">
-				<img src="Assets/Slides/5.jpg" height="450" alt="Image 3">
-			</div>
-			<div id="Slide_6">
-				<img src="Assets/Slides/6.jpg" height="450" alt="Image 3">
-			</div>
-			<div id="Slide_7">
-				<img src="Assets/Slides/7.jpg" height="450" alt="Image 3">
-			</div>
-			<div id="Slide_8">
-				<img src="Assets/Slides/8.jpg" height="450" alt="Image 3">
-			</div>
-			<div id="Slide_9">
-				<img src="Assets/Slides/9.jpg" height="450" alt="Image 3">
-			</div>
-			<div id="Slide_10">
-				<img src="Assets/Slides/10.jpg" height="450" alt="Image 3">
-			</div>
-			<div id="Slide_11">
-				<img src="Assets/Slides/11.jpg" height="450" alt="Image 3">
-			</div>
-			<div id="Slide_12">
-				<img src="Assets/Slides/12.jpg" height="450" alt="Image 3">
-			</div>
-		</div>
 
-		<!--  -->
-		<div class="Slider_Navigation">
-			<a href="#Slide_1"></a>
-			<a href="#Slide_2"></a>
-			<a href="#Slide_3"></a>
-			<a href="#Slide_4"></a>
-			<a href="#Slide_5"></a>
-			<a href="#Slide_6"></a>
-			<a href="#Slide_7"></a>
-			<a href="#Slide_8"></a>
-			<a href="#Slide_9"></a>
-			<a href="#Slide_10"></a>
-			<a href="#Slide_11"></a>
-			<a href="#Slide_12"></a>
-		</div>
 
-	</div>
-	</section>
+/* Button handler*/
+.Button_Holder a {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    
+}
+.Button_Holder a:hover {
+    opacity: 1;
+}
 
-	
 
-	<br>
-	<br>
-	<br>
 
-	<h1 style="color: aliceblue;"> Usefull Links </h1>
-	
-	<div class = "Button_Holder">
-		<a href="https://ilikeducks44.itch.io/bike-game" target="_blank" rel="noopener noreferrer"> <!-- Attribute + Opening new tab -->
-			<button style="font-size: medium; background-color: aliceblue; color: black; border-radius: 25px; border-color: blue; border-radius: 4px;" > My Bike Game</button>
-		</a>
-		<a href="https://ilikeducks44.itch.io/platformer-game" target="_blank" rel="noopener noreferrer"> <!-- Attribute + Opening new tab -->
-			<button style="font-size: medium; background-color: aliceblue; color: black; border-radius: 25px; border-color: blue; border-radius: 4px;" > My Platformer Game</button>
-		</a>
-		<a href="https://canva.link/w20ukgq4bbrxdc0" target="_blank" rel="noopener noreferrer"> <!-- Attribute + Opening new tab -->
-			<button style="font-size: medium; background-color: aliceblue; color: black; border-radius: 25px; border-color: blue; border-radius: 4px;" > Portfolio Slides </button>
-		</a>
-		<a href="https://drive.google.com/drive/folders/1FsaVKWT7yZkT9hBWEyHDdnfuM-o_4gSO?usp=drive_link" target="_blank" rel="noopener noreferrer"> <!-- Attribute + Opening new tab -->
-			<button style="font-size: medium; background-color: aliceblue; color: black; border-radius: 25px; border-color: blue; border-radius: 4px;" > Google Drive Photos </button>
-		</a>
-	</div>
+h1,h2,h4 .Slider_Navigation {
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black; 
+    /* format is x,y,thing(usually 0) and colour, do it 4 times for full outline as this is only shadow*/
+    color: aliceblue;
+}
 
-	<br>
-	<br>
-	<br>
-
-	<h1 style="color: aliceblue;"> Images of Me </h1>
-
-			<section class="Container"> <div class="Slider_Wrapper"> 
-					<div class="Slider"> 
-						<div id="Me_1">
-							<img src="Assets/Me_Photos/Me_1.PNG" height="450" alt="Me 1">
-						</div>
-						<div id="Me_2">
-							<img src="Assets/Me_Photos/Me_2.PNG" height="450" alt="Me 2">
-						</div>
-						<div id="Me_3">
-							<img src="Assets/Me_Photos/Me_3.PNG" height="450" alt="Me 3">
-						</div>
-						<div id="Me_4">
-							<img src="Assets/Me_Photos/Me_4.JPG" height="450" alt="Me 4">
-						</div>
-						<div id="Me_5">
-							<img src="Assets/Me_Photos/Me_5.PNG" height="450" alt="Me 5">
-						</div>
-						<div id="Me_6">
-							<img src="Assets/Me_Photos/Me_6.PNG" height="450" alt="Me 6">
-						</div>
-						<div id="Me_7">
-							<img src="Assets/Me_Photos/Me_7.PNG" height="450" alt="Me 7">
-						</div>
-					</div>
-
-					<div class="Slider_Navigation">
-						<a href="#Me_1"></a>
-						<a href="#Me_2"></a>
-						<a href="#Me_3"></a>
-						<a href="#Me_4"></a>
-						<a href="#Me_5"></a>
-						<a href="#Me_6"></a>
-						<a href="#Me_7"></a>
-					</div>
-				</div>
-			</section>
-
-	
-	<br>
-	<br>
-	<br>
-	<h1 style="color: aliceblue;"> Certificates </h1>
-	<section class="Container"> <div class="Slider_Wrapper"> 
-					<div class="Slider"> 
-						<div id="Cert_1">
-							<img src="Assets/Certs/Cert_1.jpg" height="450" alt="Me 1">
-						</div>
-						<div id="Cert_2">
-							<img src="Assets/Certs/Cert_2.jpg" height="450" alt="Me 2">
-						</div>
-						<div id="Cert_3">
-							<img src="Assets/Certs/Cert_3.jpg" height="450" alt="Me 3">
-						</div>
-						<div id="Cert_4">
-							<img src="Assets/Certs/Cert_4.jpg" height="450" alt="Me 1">
-						</div>
-						<div id="Cert_5">
-							<img src="Assets/Certs/Cert_5.jpg" height="450" alt="Me 2">
-						</div>
-						<div id="Cert_6">
-							<img src="Assets/Certs/Cert_6.jpg" height="450" alt="Me 3">
-						</div>
-						<div id="Cert_7">
-							<img src="Assets/Certs/Cert_7.jpg" height="450" alt="Me 1">
-						</div>
-					</div>
-
-					<div class="Slider_Navigation">
-						<a href="#Cert_1"></a>
-						<a href="#Cert_2"></a>
-						<a href="#Cert_3"></a>
-						<a href="#Cert_4"></a>
-						<a href="#Cert_5"></a>
-						<a href="#Cert_6"></a>
-						<a href="#Cert_7"></a>
-					</div>
-				</div>
-			</section>
-</body>
 
