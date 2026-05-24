@@ -147,7 +147,13 @@ h2
     backface-visibility: 30%;
     background-position-y: -285px;
 }
-
+#Cert_12 img{
+    object-fit: contain;
+    background-image: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
+    background-position-x: -320px;
+    backface-visibility: 30%;
+    background-position-y: -285px;
+}
 
 
 
