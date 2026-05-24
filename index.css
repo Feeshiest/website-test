@@ -52,7 +52,7 @@ h2
     border-radius: 0.5rem;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 }
-#Slide_1, #Slide_2, #Slide_3 ,#Slide_4 , #Slide_5, #Slide_6, #Slide_7, #Slide_8, #Slide_9, #Slide_10, #Slide_11, #Slide_12 , #Me_1, #Me_2, #Me_3, #Me_4, #Me_5, #Me_6,#Me_7 , #Cert_1, #Cert_2, #Cert_3, #Cert_4, #Cert_5, #Cert_6, #Cert_7, #Cert_8, #Cert_9, #Cert_10, #Cert_11{
+#Slide_1, #Slide_2, #Slide_3 ,#Slide_4 , #Slide_5, #Slide_6, #Slide_7, #Slide_8, #Slide_9, #Slide_10, #Slide_11, #Slide_12 , #Me_1, #Me_2, #Me_3, #Me_4, #Me_5, #Me_6,#Me_7 , #Cert_1, #Cert_2, #Cert_3, #Cert_4, #Cert_5, #Cert_6, #Cert_7, #Cert_8, #Cert_9, #Cert_10, #Cert_11, #Cert_12{
     flex: 0 0 100%;
     scroll-snap-align: start;
 }
