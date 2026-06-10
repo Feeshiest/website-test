@@ -52,7 +52,17 @@ h2
     border-radius: 0.5rem;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 }
-#Slide_1, #Slide_2, #Slide_3 ,#Slide_4 , #Slide_5, #Slide_6, #Slide_7, #Slide_8, #Slide_9, #Slide_10, #Slide_11, #Slide_12 , #Me_1, #Me_2, #Me_3, #Me_4, #Me_5, #Me_6,#Me_7 , #Cert_1, #Cert_2, #Cert_3, #Cert_4, #Cert_5, #Cert_6, #Cert_7, #Cert_8, #Cert_9, #Cert_10, #Cert_11, #Cert_12{
+#Slide_1, #Slide_2, #Slide_3 ,#Slide_4 , #Slide_5, #Slide_6, #Slide_7, #Slide_8, #Slide_9, #Slide_10, #Slide_11, #Slide_12{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+#Me_1, #Me_2, #Me_3, #Me_4, #Me_5, #Me_6,#Me_7
+{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+#Cert_1, #Cert_2, #Cert_3, #Cert_4, #Cert_5, #Cert_6, #Cert_7, #Cert_8, #Cert_9, #Cert_10, #Cert_11, #Cert_12, #Cert_13
+{
     flex: 0 0 100%;
     scroll-snap-align: start;
 }
@@ -149,6 +159,14 @@ h2
 }
 
 #Cert_12 img{
+    object-fit: contain;
+    background-image: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
+    background-position-x: -320px;
+    backface-visibility: 30%;
+    background-position-y: -285px;
+}
+
+#Cert_13 img{
     object-fit: contain;
     background-image: url(Assets/Slides/3aa46f5701fc6ed92234ea0a9f86e2cd.gif);
     background-position-x: -320px;
