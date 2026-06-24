@@ -4,7 +4,7 @@ This is my personal portfolio. This project showcases my work through an interac
 - Frontend: HTML and CSS
 - Game Development: C#
 
-#Development Tools
+#Development Tool
 - Server Hosting: GitHub and Itch.io
 - Game Development: Unity 2021.3.13f1 , Unity Asset Store , Visual Studio 2022
   *Note: Game Assets were partially sourced from the Unity Asset Store to focus on playability*
